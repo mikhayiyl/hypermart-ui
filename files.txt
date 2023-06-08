@@ -1,0 +1,4 @@
+stripe.com
+developers page (publishableKey & secretKey);
+backend- npm i stripe
+interface - npm i react-stripe-checkout

@@ -1,0 +1,150 @@
+.FormContainer {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: pink;
+    background-image: url("../../../public/assets/images/doughnut.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    user-select: none;
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.35),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    animation: animateForm 0.5s ease-in forwards;
+  }
+  .signup_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  h2 {
+    color: crimson;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .inputBox {
+    position: relative;
+    width: 300px;
+    margin: 0.8em 0;
+  }
+  .inputBox input {
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background: #223243;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+  }
+
+  input:valid ~ span,
+  input:focus ~ span {
+    color: #00dfc4;
+    border: 1px solid #00dfc4;
+    background: #223243;
+    transform: translateX(25px) translateY(-10px);
+    font-size: 0.6em;
+    padding: 4px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+  }
+  input:valid,
+  input:focus {
+    border: 1px solid #00dfc4;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-weight: 300;
+    font-size: 1em;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .icon {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 25px;
+    padding-right: 8px;
+    padding: 2px 0;
+    color: #00dfc4;
+    border-right: 1px solid #00dfc4;
+  }
+  input[type="submit"] {
+    background: #00dfc4;
+    padding: 10px 0;
+    color: #223243;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.35),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+  }
+
+  small {
+    font-size: 0.75em;
+    font-weight: 300;
+    color: blue;
+  }
+
+  label {
+    font-weight: 500;
+    color: crimson;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: underline;
+  }
+
+  .signup_form {
+    display: none;
+  }
+
+  #toggle:checked ~ .signin_form {
+    display: none;
+  }
+
+  #toggle:checked ~ .signup_form {
+    display: block;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  @keyframes animateForm {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

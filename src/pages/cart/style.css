@@ -1,0 +1,51 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+.product-image {
+  width: 150px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hcolor,
+.hsize {
+  font-weight: 500;
+  font-size: 13px;
+}
+.colors,
+.sizes {
+  display: flex;
+  margin-left: 3px;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #903f;
+  cursor: pointer;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+.border {
+  border: 3px solid #29b2db;
+}

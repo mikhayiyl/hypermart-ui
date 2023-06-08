@@ -1,0 +1,18 @@
+.Item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.Item > label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: gray;
+}
+
+.Input {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}

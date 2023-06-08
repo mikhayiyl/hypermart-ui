@@ -1,0 +1,22 @@
+.DropDown {
+  float: left;
+  overflow: hidden;
+}
+.Content {
+  /* display: none; */
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 110;
+}
+
+.Content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
